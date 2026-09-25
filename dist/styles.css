@@ -1083,3 +1083,47 @@ button, input, select, textarea { font: inherit; color: inherit; }
     font-size:8px;
   }
 }
+
+/* Home hero mobile v8: quieter type, stronger image, one concise message. */
+@media (max-width:760px) {
+  .home-page .ref-hero-image {
+    object-position:57% center;
+    transform:scale(1.015);
+  }
+  .home-page .ref-hero-shade {
+    background:linear-gradient(180deg,rgba(9,7,5,.35) 0%,rgba(9,7,5,.05) 34%,rgba(10,8,5,.12) 58%,rgba(10,8,5,.76) 100%);
+  }
+  .home-page .ref-hero-word {
+    top:13.5%;
+    left:var(--pad);
+    right:var(--pad);
+    width:auto;
+    font-size:25.5vw;
+    line-height:.8;
+    letter-spacing:-.095em;
+    transform:scaleX(.95);
+    transform-origin:left top;
+    text-shadow:0 2px 20px rgba(0,0,0,.15);
+  }
+  .home-page .ref-hero-bottom {
+    bottom:22px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:17px;
+  }
+  .home-page .ref-hero-bottom p:first-child {
+    display:block;
+    max-width:16ch;
+    font:400 25px/1.02 var(--serif);
+  }
+  .home-page .ref-hero-bottom p:nth-child(2) { display:none; }
+  .home-page .ref-hero-bottom a {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-bottom:7px;
+    font-size:17px;
+  }
+  .home-page .ref-hero-bottom a span { margin-left:0; }
+}
