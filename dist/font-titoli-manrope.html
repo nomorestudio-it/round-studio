@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Venti nuovi font per i titoli di ROUND Studio, tutti abbinati a Manrope.">
+  <title>ROUND — 20 font per i titoli con Manrope</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya&amp;family=Baskervville&amp;family=Bellefair&amp;family=Bricolage+Grotesque&amp;family=Castoro&amp;family=Chivo&amp;family=Crimson+Pro&amp;family=Domine&amp;family=GFS+Didot&amp;family=Gelasio&amp;family=Kalnia&amp;family=Libre+Baskerville&amp;family=Manrope:wght@400;500;600&amp;family=Oranienbaum&amp;family=Petrona&amp;family=Questrial&amp;family=Rufina&amp;family=Syne&amp;family=Tenor+Sans&amp;family=Vidaloka&amp;family=Zilla+Slab&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --paper: #f6f6f3; --white: #fff; --ink: #211d18; --muted: #75716a; --line: #d6d1c8; --accent: #a95634; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font: 400 13px/1.5 'Manrope', Arial, sans-serif; }
+    a { color: inherit; }
+    .top { padding: 25px clamp(20px, 4vw, 60px) 48px; border-bottom: 1px solid var(--line); }
+    .top-line { display: flex; justify-content: space-between; gap: 20px; font-size: 11px; }
+    .top-line strong { font-size: 15px; line-height: 1; letter-spacing: -.055em; }
+    .top-line span { text-align: right; }
+    .intro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); gap: 42px; align-items: end; margin-top: clamp(55px, 9vw, 130px); }
+    .intro h1 { max-width: 14ch; margin: 0; font: 500 clamp(47px, 7vw, 104px)/.98 'Manrope', Arial, sans-serif; letter-spacing: -.075em; }
+    .intro h1 span { color: var(--accent); }
+    .intro p { max-width: 42ch; margin: 0 0 6px; font-size: 13px; }
+    .key { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 34px; }
+    .key span { padding: 7px 10px; border: 1px solid var(--line); font-size: 10px; }
+    main { padding: 0 clamp(20px, 4vw, 60px) 95px; }
+    .group { padding-top: 58px; }
+    .group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; padding: 12px 0 19px; border-top: 1px solid var(--ink); }
+    .group-head h2 { margin: 0; font: 500 16px/1.2 'Manrope', Arial, sans-serif; letter-spacing: -.02em; }
+    .group-head p { max-width: 52ch; margin: 0; color: var(--muted); font-size: 11px; text-align: right; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .sample { min-width: 0; min-height: 450px; display: flex; flex-direction: column; background: var(--white); border: 1px solid var(--line); }
+    .sample-head { min-height: 46px; display: grid; grid-template-columns: 35px 1fr auto; gap: 10px; align-items: center; padding: 11px 18px; border-bottom: 1px solid var(--line); }
+    .sample-head .number { color: var(--accent); font-size: 10px; }
+    .sample-head h3 { margin: 0; font: 500 12px/1.2 'Manrope', Arial, sans-serif; }
+    .sample-head .tag { color: var(--muted); font-size: 10px; text-align: right; }
+    .sample-inner { flex: 1; display: flex; flex-direction: column; padding: clamp(25px, 3vw, 42px); }
+    .mark { font: 600 clamp(37px, 4.5vw, 60px)/.82 'Manrope', Arial, sans-serif; letter-spacing: -.09em; }
+    .role { margin: 11px 0 33px; font-size: 10px; }
+    .title { max-width: 13ch; margin: 0; font: 400 clamp(40px, 4.2vw, 65px)/1.04 var(--title-font), Georgia, serif; }
+    .secondary { margin: 14px 0 0; font: 400 clamp(19px, 2vw, 27px)/1.12 var(--title-font), Georgia, serif; }
+    .copy { max-width: 56ch; margin: auto 0 24px; padding-top: 27px; font-size: 12px; line-height: 1.55; }
+    .nav { display: flex; gap: 22px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 10px; }
+    .sample-foot { display: flex; justify-content: space-between; gap: 14px; padding: 10px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 10px; }
+    .sample-foot strong { color: var(--ink); font-weight: 500; }
+    .bottom { padding: 24px clamp(20px, 4vw, 60px) 38px; display: flex; justify-content: space-between; gap: 25px; border-top: 1px solid var(--line); font-size: 11px; }
+    .bottom p { max-width: 56ch; margin: 0; }
+    .bottom a { text-underline-offset: 3px; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (max-width: 760px) {
+      .intro { grid-template-columns: 1fr; gap: 30px; }
+      .intro h1 { font-size: clamp(42px, 11vw, 66px); }
+      .group-head { display: block; }
+      .group-head p { margin-top: 9px; text-align: left; }
+      .grid { grid-template-columns: 1fr; }
+      .sample { min-height: 410px; }
+      .title { font-size: clamp(41px, 11vw, 56px); }
+      .secondary { font-size: 21px; }
+      .sample-head { grid-template-columns: 26px 1fr; }
+      .sample-head .tag { grid-column: 2; text-align: left; }
+      .bottom { display: block; }
+      .bottom p + p { margin-top: 12px; }
+    }
+    @media print { .group { break-before: page; padding-top: 12px; } .sample { break-inside: avoid; min-height: 370px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="top-line"><strong>ROUND / TYPE STUDIES</strong><span>Vol. 02<br>20 nuovi titoli + Manrope</span></div>
+    <div class="intro"><h1>Manrope resta.<br><span>Il titolo cambia.</span></h1><p>Venti font per i titoli, tutti nuovi rispetto al primo foglio. Logotipo di prova, testo e navigazione restano in Manrope: cambia una sola variabile alla volta.</p></div>
+    <div class="key"><span>20 alternative per il titolo</span><span>Manrope per testo e navigazione</span><span>Stesso contenuto in ogni prova</span></div>
+  </header>
+  <main id="samples"></main>
+  <footer class="bottom"><p>La parola ROUND rimane in Manrope soltanto per rendere confrontabili le proposte. Non è una scelta definitiva per il marchio.</p><p><a href="./font-pairings.html">Torna alle prime 20 accoppiate</a></p></footer>
+  <script>
+    const groups = [
+      { name: 'Classici essenziali', note: 'Serif misurati, leggibili anche nei titoli più lunghi.', fonts: [
+        ['Baskervville', 'sobrio'], ['Libre Baskerville', 'strutturato'], ['Crimson Pro', 'letterario'], ['Castoro', 'caldo'], ['Alegreya', 'dinamico']
+      ]},
+      { name: 'Contemporanei', note: 'Più carattere nelle forme senza perdere compostezza.', fonts: [
+        ['Petrona', 'preciso'], ['Kalnia', 'morbido'], ['Domine', 'solido'], ['Gelasio', 'equilibrato'], ['Zilla Slab', 'materico']
+      ]},
+      { name: 'Scultorei', note: 'Contrasti e proporzioni più scenografiche, vicini al tono della reference.', fonts: [
+        ['GFS Didot', 'alto contrasto'], ['Rufina', 'elegante'], ['Vidaloka', 'incisivo'], ['Bellefair', 'leggero'], ['Oranienbaum', 'classico']
+      ]},
+      { name: 'Senza grazie', note: 'Un cambio di direzione per titoli più architettonici o grafici.', fonts: [
+        ['Tenor Sans', 'raffinato'], ['Syne', 'espressivo'], ['Bricolage Grotesque', 'organico'], ['Questrial', 'minimale'], ['Chivo', 'diretto']
+      ]}
+    ];
+    const safe = (text) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+    document.getElementById('samples').innerHTML = groups.map((group, groupIndex) => `
+      <section class="group" aria-labelledby="group-${groupIndex}">
+        <div class="group-head"><h2 id="group-${groupIndex}">${safe(group.name)}</h2><p>${safe(group.note)}</p></div>
+        <div class="grid">${group.fonts.map(([font, tag], index) => {
+          const number = String(groupIndex * 5 + index + 1).padStart(2, '0');
+          return `<article class="sample" style="--title-font:'${safe(font)}'">
+            <div class="sample-head"><span class="number">${number}</span><h3>${safe(font)}</h3><span class="tag">${safe(tag)}</span></div>
+            <div class="sample-inner"><div class="mark">ROUND</div><p class="role">Studio di interior design</p><p class="title">Spazi da abitare.</p><p class="secondary">Funzione, materia e carattere.</p><p class="copy">Disegniamo interni in cui funzione, materia e carattere convivono con naturalezza. Ogni progetto prende forma intorno a chi lo vivrà.</p><div class="nav"><span>Studio</span><span>Progetti</span><span>Contatti</span></div></div>
+            <div class="sample-foot"><span>Titoli: <strong>${safe(font)}</strong></span><span>Testi: <strong>Manrope</strong></span></div>
+          </article>`;
+        }).join('')}</div>
+      </section>`).join('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Venti accoppiate tipografiche per la proposta ROUND Studio.">
+  <title>ROUND Studio — 20 accoppiate tipografiche</title>
+  <link rel="icon" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&amp;family=Archivo:wght@400;500;600&amp;family=Barlow:wght@400;500;600&amp;family=Bodoni+Moda:opsz,wght@6..96,400&amp;family=Cormorant+Garamond:wght@400;500&amp;family=Cormorant+Infant:wght@400;500&amp;family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=EB+Garamond:wght@400;500&amp;family=Figtree:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,400&amp;family=Gloock&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Instrument+Serif&amp;family=Inter:wght@400;500;600&amp;family=Italiana&amp;family=Jost:wght@400;500;600&amp;family=Karla:wght@400;500;600&amp;family=Libre+Caslon+Display&amp;family=Libre+Franklin:wght@400;500;600&amp;family=Literata:opsz,wght@7..72,400&amp;family=Lora:wght@400;500&amp;family=Manrope:wght@400;500;600&amp;family=Marcellus&amp;family=Newsreader:opsz,wght@6..72,400&amp;family=Noto+Serif+Display:wght@400;500&amp;family=Outfit:wght@400;500;600&amp;family=Playfair+Display:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Poppins:wght@400;500;600&amp;family=Prata&amp;family=Public+Sans:wght@400;500;600&amp;family=Rozha+One&amp;family=Sora:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600&amp;family=Spectral:wght@400;500&amp;family=Urbanist:wght@400;500;600&amp;family=Work+Sans:wght@400;500;600&amp;family=Young+Serif&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --paper: #f8f8f6; --ink: #211d18; --line: #d6d2ca; --accent: #b5522e; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 14px/1.45 Arial, sans-serif; }
+    a { color: inherit; }
+    .sheet-head { padding: 26px clamp(20px, 4vw, 64px) 36px; display: grid; grid-template-columns: 1fr auto; gap: 18px; border-bottom: 1px solid var(--line); }
+    .masthead { font: 600 16px/1 Arial, sans-serif; letter-spacing: -.04em; }
+    .sheet-index { font-size: 11px; text-align: right; }
+    .intro { grid-column: 1 / -1; max-width: 1020px; padding-top: clamp(28px, 5vw, 64px); }
+    .intro h1 { margin: 0; font: 400 clamp(42px, 7vw, 94px)/.96 Georgia, serif; letter-spacing: -.055em; }
+    .intro p { max-width: 670px; margin: 24px 0 0; font-size: 14px; }
+    .sheet-nav { grid-column: 1 / -1; display: flex; gap: 22px; flex-wrap: wrap; padding-top: 26px; font-size: 11px; }
+    .sheet-nav a { text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 3px; }
+    main { padding: 0 clamp(20px, 4vw, 64px) 100px; }
+    .group { padding-top: 68px; }
+    .group-head { display: flex; justify-content: space-between; align-items: baseline; gap: 25px; margin-bottom: 19px; padding-top: 12px; border-top: 1px solid var(--ink); }
+    .group-head h2 { margin: 0; font: 400 clamp(26px, 3vw, 42px)/1 Georgia, serif; }
+    .group-head p { margin: 0; max-width: 45ch; font-size: 11px; text-align: right; }
+    .pair-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .pair { min-width: 0; min-height: 456px; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line); }
+    .pair-top { padding: 15px 18px 13px; display: grid; grid-template-columns: 42px 1fr auto; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--line); font-size: 11px; }
+    .pair-no { color: var(--accent); }
+    .pair-top strong { font-weight: 500; }
+    .pair-role { color: #79746d; text-align: right; }
+    .specimen { flex: 1; display: flex; flex-direction: column; padding: clamp(24px, 3vw, 40px) clamp(20px, 3vw, 40px) 28px; }
+    .specimen-mark { font: 600 clamp(34px, 4vw, 56px)/.85 var(--body-font), Arial, sans-serif; letter-spacing: -.075em; }
+    .specimen-kicker { margin: auto 0 15px; font: 500 11px/1.2 var(--body-font), Arial, sans-serif; }
+    .specimen-title { max-width: 12ch; margin: 0; font: 400 clamp(40px, 4.2vw, 66px)/.98 var(--display-font), Georgia, serif; letter-spacing: -.035em; }
+    .specimen-copy { max-width: 52ch; margin: 20px 0 24px; font: 400 13px/1.55 var(--body-font), Arial, sans-serif; }
+    .specimen-nav { margin-top: auto; padding-top: 13px; display: flex; gap: 21px; border-top: 1px solid var(--line); font: 500 10px/1.2 var(--body-font), Arial, sans-serif; }
+    .pair-bottom { padding: 10px 18px 12px; display: flex; gap: 8px; justify-content: space-between; border-top: 1px solid var(--line); font-size: 10px; }
+    .pair-bottom span { min-width: 0; }
+    .pair-bottom b { font-weight: 500; }
+    .sheet-foot { padding: 23px clamp(20px, 4vw, 64px) 35px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); font-size: 11px; }
+    .sheet-foot p { margin: 0; max-width: 62ch; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (max-width: 760px) {
+      .sheet-head { grid-template-columns: 1fr; }
+      .sheet-index { text-align: left; }
+      .intro { grid-column: 1; }
+      .sheet-nav { grid-column: 1; }
+      .group-head { display: block; }
+      .group-head p { margin-top: 10px; text-align: left; }
+      .pair-grid { grid-template-columns: 1fr; }
+      .pair { min-height: 420px; }
+      .specimen-title { font-size: clamp(42px, 12vw, 60px); }
+      .sheet-foot { display: block; }
+      .sheet-foot p + p { margin-top: 12px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .sheet-nav { display: none; }
+      .group { break-before: page; padding-top: 15px; }
+      .pair { break-inside: avoid; min-height: 380px; }
+      .pair-grid { gap: 10px; }
+      .sheet-foot { break-before: page; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="sheet-head">
+    <div class="masthead">ROUND / TYPE STUDIES</div>
+    <div class="sheet-index">20 accoppiate · 2 font per proposta<br>Anteprima tipografica, settembre 2026</div>
+    <div class="intro"><h1>La voce di ROUND,<br>in venti possibilità.</h1><p>Ogni proposta mette a confronto lo stesso contenuto: un carattere per i titoli editoriali e un secondo per logotipo di prova, navigazione e testo. I font attuali del sito restano invariati finché non scegliamo una coppia.</p></div>
+    <nav class="sheet-nav" aria-label="Gruppi tipografici"><a href="#editoriali">01—05 Editoriali</a><a href="#architettoniche">06—10 Architettoniche</a><a href="#contemporanee">11—15 Contemporanee</a><a href="#carattere">16—20 Di carattere</a></nav>
+  </header>
+  <main id="pair-groups"></main>
+  <footer class="sheet-foot"><p>Le immagini non sono necessarie qui: proporzioni, ritmo e leggibilità delle due famiglie sono il centro del confronto. La parola ROUND è soltanto un test tipografico, non una proposta definitiva di logo.</p><p><a href="./font-titoli-manrope.html">Apri le 20 nuove proposte con Manrope fisso</a></p></footer>
+  <script>
+    const groups = [
+      { id: 'editoriali', title: 'Editoriali', note: 'Contrasto tra titoli espressivi e testi di servizio sobri.', pairs: [
+        ['Instrument Serif', 'Manrope', 'Essenziale, con un gesto elegante'],
+        ['Cormorant Garamond', 'DM Sans', 'Classico e leggero'],
+        ['Newsreader', 'Inter', 'Caldo, leggibile, preciso'],
+        ['Bodoni Moda', 'Work Sans', 'Contrasto netto e sofisticato'],
+        ['Fraunces', 'Archivo', 'Morbido e riconoscibile']
+      ]},
+      { id: 'architettoniche', title: 'Architettoniche', note: 'Segni più strutturati per spazi e materiali.', pairs: [
+        ['DM Serif Display', 'Jost', 'Scultoreo ma misurato'],
+        ['Gloock', 'Public Sans', 'Deciso, quasi monumentale'],
+        ['Playfair Display', 'Plus Jakarta Sans', 'Formale ma accessibile'],
+        ['EB Garamond', 'Outfit', 'Colto e contemporaneo'],
+        ['Libre Caslon Display', 'Sora', 'Tradizione con ritmo digitale']
+      ]},
+      { id: 'contemporanee', title: 'Contemporanee', note: 'Per una lettura più chiara e quotidiana.', pairs: [
+        ['Lora', 'IBM Plex Sans', 'Naturale e affidabile'],
+        ['Spectral', 'Urbanist', 'Accogliente, con dettagli nitidi'],
+        ['Noto Serif Display', 'Figtree', 'Pulito e versatile'],
+        ['Prata', 'Karla', 'Raffinato senza rigidità'],
+        ['Cormorant Infant', 'Space Grotesk', 'Delicato con un lato tecnico']
+      ]},
+      { id: 'carattere', title: 'Di carattere', note: 'Alternative più marcate, da valutare sul progetto.', pairs: [
+        ['Marcellus', 'Barlow', 'Lapidario e asciutto'],
+        ['Italiana', 'Libre Franklin', 'Moda e interior'],
+        ['Literata', 'Hanken Grotesk', 'Letterario e umano'],
+        ['Young Serif', 'Albert Sans', 'Informale ma curato'],
+        ['Rozha One', 'Poppins', 'Drammatico e grafico']
+      ]}
+    ];
+    const escapeHtml = (value) => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+    document.getElementById('pair-groups').innerHTML = groups.map((group, groupIndex) => `
+      <section class="group" id="${group.id}" aria-labelledby="${group.id}-title">
+        <div class="group-head"><h2 id="${group.id}-title">${group.title}</h2><p>${group.note}</p></div>
+        <div class="pair-grid">${group.pairs.map(([display, body, mood], pairIndex) => {
+          const number = String(groupIndex * 5 + pairIndex + 1).padStart(2, '0');
+          return `<article class="pair" style="--display-font:'${escapeHtml(display)}';--body-font:'${escapeHtml(body)}'">
+            <div class="pair-top"><span class="pair-no">${number}</span><strong>${escapeHtml(display)} + ${escapeHtml(body)}</strong><span class="pair-role">${escapeHtml(mood)}</span></div>
+            <div class="specimen"><div class="specimen-mark">ROUND</div><div class="specimen-kicker">Studio di interior design</div><h3 class="specimen-title">Spazi da abitare.</h3><p class="specimen-copy">Disegniamo interni in cui funzione, materia e carattere convivono con naturalezza. Ogni progetto prende forma intorno a chi lo vivrà.</p><div class="specimen-nav"><span>Studio</span><span>Progetti</span><span>Contatti</span></div></div>
+            <div class="pair-bottom"><span>Titoli: <b>${escapeHtml(display)}</b></span><span>Testo e navigazione: <b>${escapeHtml(body)}</b></span></div>
+          </article>`;
+        }).join('')}</div>
+      </section>`).join('');
+  </script>
+</body>
+</html>
