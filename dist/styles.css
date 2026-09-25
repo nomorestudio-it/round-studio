@@ -1118,12 +1118,6 @@ button, input, select, textarea { font: inherit; color: inherit; }
   }
   .home-page .ref-hero-bottom p:nth-child(2) { display:none; }
   .home-page .ref-hero-bottom a {
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding-bottom:7px;
-    font-size:17px;
+    display:none;
   }
-  .home-page .ref-hero-bottom a span { margin-left:0; }
 }
