@@ -213,7 +213,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .home-page { --paper: #fff; --ink: #1d1a16; --sage: #817f69; --orange: #bd4f27; font-size: 12px; }
 .home-page .eyebrow { font-size: 9px; letter-spacing: 0; }
 .home-page .site-header { height: 52px; }
-.ref-hero { position: relative; height: min(840px, 92svh); min-height: 620px; background: #373027; color: #fff; overflow: hidden; }
+.ref-hero { position: relative; height: 100svh; min-height: 100svh; background: #373027; color: #fff; overflow: hidden; }
 .ref-hero-image, .ref-hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
 .ref-hero-image { object-position: center 54%; }
 .ref-hero-shade { background: linear-gradient(180deg,rgba(9,7,5,.24) 0%,transparent 37%,rgba(10,8,5,.62) 100%); }
@@ -325,7 +325,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (max-width: 760px) {
   .contact-page .contact-editorial { padding-top: 115px; }
   .contact-page .ref-section-head h1 { font-size: clamp(35px, 8vw, 47px); }
-  .ref-hero { height: 100svh; min-height: 680px; }
+  .ref-hero { height: 100svh; min-height: 100svh; max-height: none; }
   .ref-hero-image { object-position: 52% center; }
   .ref-hero-word { top: 17%; left: 12px; font-size: 35.5vw; transform: scaleX(.9); }
   .ref-hero-bottom { display: block; bottom: 24px; }
@@ -828,8 +828,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   }
   .round-site .menu-social { padding:20px var(--pad); }
 
-  .new-hero,
-  .ref-hero { height:100svh; min-height:650px; max-height:820px; }
+  .new-hero { height:100svh; min-height:650px; max-height:820px; }
+  .ref-hero { height:100svh; min-height:100svh; max-height:none; }
   .new-hero-kicker { top:84px; }
   .new-hero h1 { top:27%; font-size:16.5vw; line-height:.84; }
   .portfolio-page .new-hero h1,
