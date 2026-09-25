@@ -1113,8 +1113,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   }
   .home-page .ref-hero-bottom p:first-child {
     display:block;
-    max-width:16ch;
-    font:400 25px/1.02 var(--serif);
+    max-width:18ch;
+    font:400 clamp(29px,7.2vw,34px)/.98 var(--serif);
   }
   .home-page .ref-hero-bottom p:nth-child(2) { display:none; }
   .home-page .ref-hero-bottom a {
